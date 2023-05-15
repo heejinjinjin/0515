@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function parseInt (num) {
-            thousand = Math.floor(num / 1000);
+        function test (num) {
+            thousand = parseInt((num / 1000));
             alert("천의 자리는 :" + thousand);
-            hundred = num%1000/100;
+            hundred = parseInt(num%1000/100);
             alert("백의 자리는 : " + hundred);
         }
-        var num = prompt("입력해주세요", "입력");
-        parseInt(num)
+        var num = parseInt(prompt("입력해주세요", "입력"));
+        test(num)
     </script>
 </head>
 <body>
